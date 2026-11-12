@@ -1,0 +1,8 @@
+{
+  "name": "kitchenwccs-landing",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node landingPage/backEnd/server.js"
+  }
+}

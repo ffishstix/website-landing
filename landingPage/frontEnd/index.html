@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fishstix Projects | Kitchen, Capital Rift &amp; Battery Watch</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="./public/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="page">
+    <header class="top-bar">
+        <div class="brand">
+            <span class="brand-mark">FS</span>
+            <div class="brand-text">
+                <div class="brand-name">Fishstix</div>
+                <div class="brand-subtitle">Projects</div>
+            </div>
+        </div>
+        <div class="status-pill" id="status-pill">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="status-text" id="status-text">Checking services...</span>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">Fishstix projects</p>
+            <h1>Three projects, one place to start.</h1>
+            <p class="subhead">
+                Run the Kitchen, plan a Capital Rift factory, and keep an eye on the AFERIY P210 powering your setup.
+            </p>
+            <div class="launch-groups">
+                <section class="launch-group ops" aria-labelledby="kitchen-title">
+                    <h2 class="launch-title" id="kitchen-title">Kitchen</h2>
+                    <p>See live kitchen orders and manage the menu, tables, and service from the admin console.</p>
+                    <div class="cta-row">
+                        <a class="cta primary" href="https://display.fishstix.uk" data-local-href="http://localhost:1248">Open Kitchen</a>
+                        <a class="cta ghost" href="https://admin.fishstix.uk" data-local-href="http://localhost:1249">Open Admin</a>
+                    </div>
+                </section>
+                <section class="launch-group capital-rift" aria-labelledby="capital-rift-title">
+                    <h2 class="launch-title" id="capital-rift-title">Capital Rift</h2>
+                    <p>Build factory plans, trace production chains, and explore market prices for the game.</p>
+                    <div class="cta-row">
+                        <a class="cta primary" href="https://capital-rift.fishstix.uk" data-local-href="http://localhost:3000">Open Calculator</a>
+                    </div>
+                </section>
+                <section class="launch-group battery-watch" aria-labelledby="battery-title">
+                    <div class="battery-mark" aria-hidden="true">↯</div>
+                    <div>
+                        <p class="card-kicker">POWER MONITORING</p>
+                        <h2 class="launch-title" id="battery-title">Battery Watch</h2>
+                        <p>A live view of the P210’s charge, power in and out, estimated runtime, and history. Cloudflare keeps logging while the PC is off; the Windows app adds tray alerts when power runs low.</p>
+                    </div>
+                    <div class="cta-row">
+                        <a class="cta battery-primary" href="https://battery.fishstix.uk">Open Battery Watch</a>
+                        <a class="cta battery-secondary" href="https://battery.fishstix.uk/download.html">Get Windows app</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="hero-card-header">
+                <div>
+                    <div class="hero-title">Tracked surfaces</div>
+                    <div class="hero-value">Kitchen · Capital Rift · Battery</div>
+                </div>
+                <div class="badge">Projects</div>
+            </div>
+            <div class="hero-card-body">
+                <div class="metric">
+                    <div class="metric-label">Capital Rift</div>
+                    <div class="metric-value">Factory planner</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Kitchen display</div>
+                    <div class="metric-value">Service</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Admin console</div>
+                    <div class="metric-value">Config</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Battery Watch</div>
+                    <div class="metric-value">Live + history</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
+<script src="./public/js/config.js"></script>
+<script src="./public/js/constants.js"></script>
+<script src="./public/js/state.js"></script>
+<script src="./public/js/status.js"></script>
+<script src="./public/js/links.js"></script>
+<script src="./public/js/init.js"></script>
+</body>
+</html>
