@@ -4,8 +4,9 @@ The project landing page and its status service, split from the original monorep
 
 ## Cloudflare Pages
 
+- Root directory: `landingPage`
 - Build command: `npm run build`
-- Build output directory: `landingPage/frontEnd`
+- Build output directory: `public`
 - Environment variable: `API_BASE_URL` for the landing status API origin.
 - Backend environment variable: `CORS_ORIGIN` set to the deployed Pages URL.
 
