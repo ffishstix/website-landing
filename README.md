@@ -8,8 +8,6 @@ The project landing page and its status service, split from the original monorep
 - Build command: `npm run build`
 - Build output directory: `public`
 
-If the Pages project still reports `landingPage/dist`, the compatibility `dist` directory is also generated. Prefer changing the Pages output directory to `public` when Cloudflare allows it.
-- Environment variable: `API_BASE_URL` for the landing status API origin.
-- Backend environment variable: `CORS_ORIGIN` set to the deployed Pages URL.
+The `functions/` directory serves `/api/status` and the custom 404 and bot-probe responses.
 
-The backend is included for local or separate Node hosting. Cloudflare Pages serves the static frontend; it does not run the Express service. Set `API_BASE_URL` to the public landing backend origin when deploying the page separately. Leave it empty when the backend is served from the same origin.
+The legacy Node status service remains available for local use. The hosted page checks the Capital Rift, Kitchen, Admin, and Battery Watch sites through its Pages Function.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fishstix Projects | Kitchen, Capital Rift &amp; Battery Watch</title>
+    <title>Fishstix Projects | Coursework &amp; Personal Projects</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="./public/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,82 +21,92 @@
                 <div class="brand-subtitle">Projects</div>
             </div>
         </div>
-        <div class="status-pill" id="status-pill">
+        <div class="status-pill" id="status-pill" role="status" aria-live="polite">
             <span class="status-dot" id="status-dot"></span>
             <span class="status-text" id="status-text">Checking services...</span>
         </div>
     </header>
 
-    <main class="hero">
-        <div class="hero-copy">
+    <main>
+        <div class="intro">
             <p class="eyebrow">Fishstix projects</p>
-            <h1>Three projects, one place to start.</h1>
-            <p class="subhead">
-                Run the Kitchen, plan a Capital Rift factory, and keep an eye on the AFERIY P210 powering your setup.
-            </p>
-            <div class="launch-groups">
-                <section class="launch-group ops" aria-labelledby="kitchen-title">
-                    <h2 class="launch-title" id="kitchen-title">Kitchen</h2>
-                    <p>See live kitchen orders and manage the menu, tables, and service from the admin console.</p>
-                    <div class="cta-row">
-                        <a class="cta primary" href="https://display.fishstix.uk" data-local-href="http://localhost:1248">Open Kitchen</a>
-                        <a class="cta ghost" href="https://admin.fishstix.uk" data-local-href="http://localhost:1249">Open Admin</a>
-                    </div>
-                </section>
-                <section class="launch-group capital-rift" aria-labelledby="capital-rift-title">
-                    <h2 class="launch-title" id="capital-rift-title">Capital Rift</h2>
-                    <p>Build factory plans, trace production chains, and explore market prices for the game.</p>
-                    <div class="cta-row">
-                        <a class="cta primary" href="https://capital-rift.fishstix.uk" data-local-href="http://localhost:3000">Open Calculator</a>
-                    </div>
-                </section>
-                <section class="launch-group battery-watch" aria-labelledby="battery-title">
-                    <div class="battery-mark" aria-hidden="true">↯</div>
-                    <div>
-                        <p class="card-kicker">POWER MONITORING</p>
-                        <h2 class="launch-title" id="battery-title">Battery Watch</h2>
-                        <p>A live view of the P210’s charge, power in and out, estimated runtime, and history. Cloudflare keeps logging while the PC is off; the Windows app adds tray alerts when power runs low.</p>
-                    </div>
-                    <div class="cta-row">
-                        <a class="cta battery-primary" href="https://battery.fishstix.uk">Open Battery Watch</a>
-                        <a class="cta battery-secondary" href="https://battery.fishstix.uk/download.html">Get Windows app</a>
-                    </div>
-                </section>
-            </div>
+            <h1>Explore my projects</h1>
+            <p class="subhead">A kitchen system I built for coursework, plus tools I made for home and for a game I play.</p>
         </div>
-        <div class="hero-card">
-            <div class="hero-card-header">
+
+        <section class="service-board" aria-labelledby="services-title">
+            <div class="service-board-heading">
                 <div>
-                    <div class="hero-title">Tracked surfaces</div>
-                    <div class="hero-value">Kitchen · Capital Rift · Battery</div>
+                    <p class="eyebrow">Live service checker</p>
+                    <h2 id="services-title">Current status</h2>
                 </div>
-                <div class="badge">Projects</div>
+                <span class="checked-at" id="checked-at">Checking now…</span>
             </div>
-            <div class="hero-card-body">
-                <div class="metric">
-                    <div class="metric-label">Capital Rift</div>
-                    <div class="metric-value">Factory planner</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Kitchen display</div>
-                    <div class="metric-value">Service</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Admin console</div>
-                    <div class="metric-value">Config</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Battery Watch</div>
-                    <div class="metric-value">Live + history</div>
-                </div>
+            <div class="service-grid" id="service-grid" aria-live="polite">
+                <article class="service-card pending" id="service-battery">
+                    <div class="service-card-top"><h3>Battery Watch</h3><span class="service-state">Checking</span></div>
+                    <p class="service-detail">Checking battery connection…</p>
+                </article>
+                <article class="service-card pending" id="service-display">
+                    <div class="service-card-top"><h3>Kitchen Display</h3><span class="service-state">Checking</span></div>
+                    <p class="service-detail">Checking site…</p>
+                </article>
+                <article class="service-card pending" id="service-admin">
+                    <div class="service-card-top"><h3>Kitchen Admin</h3><span class="service-state">Checking</span></div>
+                    <p class="service-detail">Checking site…</p>
+                </article>
+                <article class="service-card pending" id="service-capital-rift">
+                    <div class="service-card-top"><h3>Capital Rift</h3><span class="service-state">Checking</span></div>
+                    <p class="service-detail">Checking site…</p>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <section class="project-section" aria-labelledby="coursework-title">
+            <div class="section-heading">
+                <p class="eyebrow">Coursework</p>
+                <h2 id="coursework-title">Kitchen system</h2>
+            </div>
+            <div class="project-grid">
+                <article class="launch-group" aria-labelledby="kitchen-title">
+                    <h3 class="launch-title" id="kitchen-title">Kitchen Display</h3>
+                    <p>See incoming orders as they reach the kitchen.</p>
+                    <a class="cta primary" href="https://display.fishstix.uk" data-local-href="http://localhost:1248">Open Kitchen Display</a>
+                </article>
+                <article class="launch-group" aria-labelledby="admin-title">
+                    <h3 class="launch-title" id="admin-title">Kitchen Admin</h3>
+                    <p>Manage the menu, tables, and orders for the kitchen system.</p>
+                    <a class="cta primary" href="https://admin.fishstix.uk" data-local-href="http://localhost:1249">Open Kitchen Admin</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section personal-section" aria-labelledby="personal-title">
+            <div class="section-heading">
+                <p class="eyebrow">Personal projects</p>
+                <h2 id="personal-title">Things I made for myself</h2>
+            </div>
+            <div class="project-grid">
+                <article class="launch-group battery-watch" aria-labelledby="battery-title">
+                    <h3 class="launch-title" id="battery-title">Battery Watch</h3>
+                    <p>Check the charge, power use, and history of my backup battery at home.</p>
+                    <div class="cta-row">
+                        <a class="cta primary" href="https://battery.fishstix.uk">Open Battery Watch</a>
+                        <a class="cta ghost" href="https://battery.fishstix.uk/download.html">Get Windows app</a>
+                    </div>
+                </article>
+                <article class="launch-group capital-rift" aria-labelledby="capital-rift-title">
+                    <h3 class="launch-title" id="capital-rift-title">Capital Rift</h3>
+                    <p>Plan factories and check market prices for Capital Rift, a game I like to play.</p>
+                    <a class="cta primary" href="https://capital-rift.fishstix.uk" data-local-href="http://localhost:3000">Open Factory Planner</a>
+                </article>
+            </div>
+        </section>
     </main>
 </div>
 
 <div class="glow glow-a"></div>
 <div class="glow glow-b"></div>
-<script src="./public/js/config.js"></script>
 <script src="./public/js/constants.js"></script>
 <script src="./public/js/state.js"></script>
 <script src="./public/js/status.js"></script>
